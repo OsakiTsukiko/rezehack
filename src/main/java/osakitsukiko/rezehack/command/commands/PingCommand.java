@@ -4,7 +4,7 @@ import osakitsukiko.rezehack.command.Command;
 
 public class PingCommand extends Command {
 
-    public PingCommand() {super(new String[]{"ping"});}
+    public PingCommand() { super(new String[]{"ping"}); }
 
     @Override
     public void onCommand(String[] args) {

@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://cdn.discordapp.com/attachments/762650678245589013/999413535052402688/large.png" alt="reze" width="30%" style="border-radius: 5px;">
+<img src="https://raw.githubusercontent.com/OsakiTsukiko/rezehack/main/src/main/resources/assets/rezehack/large.png" alt="reze" width="30%" style="border-radius: 5px;">
 </p>
 
 <h1 align="center">RezeHack</h1>

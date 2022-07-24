@@ -7,7 +7,9 @@
   ],
   "client": [
     "MixinMinecraftClient",
-    "MixinClientConnection"
+    "MixinInGameHud",
+    "MixinClientConnection",
+    "MixinClientPlayerEntity"
   ],
   "injectors": {
     "defaultRequire": 1
