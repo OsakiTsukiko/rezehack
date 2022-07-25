@@ -25,6 +25,7 @@ public class HelpCommand extends Command {
                 tmp += StringUtils.capitalize(command.name[0]) +", ";
             }
             sendMessage(tmp.substring(0, tmp.length()-2));
+            sendMessage("Use " + Formatting.YELLOW + "/help <module>" + Formatting.RESET + " for info on a module");
         } else if ( args.length == 2 ) {
             // Try to find module
             Module module = ModuleManager.getModule(args[1]);

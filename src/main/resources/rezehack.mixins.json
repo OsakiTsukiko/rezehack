@@ -9,7 +9,8 @@
     "MixinMinecraftClient",
     "MixinInGameHud",
     "MixinClientConnection",
-    "MixinClientPlayerEntity"
+    "MixinClientPlayerEntity",
+    "MinecraftClientAccessor"
   ],
   "injectors": {
     "defaultRequire": 1

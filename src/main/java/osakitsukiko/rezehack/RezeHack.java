@@ -8,6 +8,7 @@ import net.minecraft.util.Formatting;
 import net.minecraft.client.MinecraftClient;
 import osakitsukiko.rezehack.command.CommandManager;
 import osakitsukiko.rezehack.modules.ModuleManager;
+import osakitsukiko.rezehack.utils.AccountManager;
 import osakitsukiko.rezehack.utils.ConfigManager;
 import osakitsukiko.rezehack.utils.SettingsManager;
 
@@ -30,6 +31,7 @@ public class RezeHack implements ModInitializer {
 	public void onInitialize() {
 		EVENT_BUS = new EventManager();
 
+		AccountManager.crackedLogin("OsakiTsukiko");
 		SettingsManager.init();
 		ModuleManager.init();
 		CommandManager.init();

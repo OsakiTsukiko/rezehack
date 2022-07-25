@@ -16,3 +16,7 @@
 ### Installation
 - Install [Fabric](https://fabricmc.net/)
 - Add RezeHack jar file to the mods folder
+
+### TODO
+[] Command Auto Complete
+[] HUD

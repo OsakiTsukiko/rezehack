@@ -17,25 +17,21 @@ public class Fullbright extends Module {
     }
 
     ArrayList<String> fb_type_options = new ArrayList<String>();
-    public Setting<String> fb_type = register(new Setting("type", "Type", "type of fullbright", this, fb_type_options, "gamma"));
-
-    boolean isExisting = false;
-
-    @Override
-    public void onEnable() {
-        /* if (mc.player != null && !isExisting) {
-            isExisting = true;
-            initalGamma = mc.options.getGamma().getValue();
-        } */
-        mc.player.addStatusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 500, 0));
-    }
+    public Setting<String> fb_type = register(new Setting("type", "Type", "type of fullbright", this, fb_type_options, "night_vision"));
 
     @Override
     public void onUpdate() {
+        if (fb_type.getValue().equalsIgnoreCase("night_vision")) {
+            if (this.isEnabled()) {
+                mc.player.addStatusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 500, 0));
+            }
+        }
     }
 
     @Override
     public void onDisable() {
+        if (fb_type.getValue().equalsIgnoreCase("night_vision"))
+            mc.player.removeStatusEffect(StatusEffects.NIGHT_VISION);
     }
 
 }
