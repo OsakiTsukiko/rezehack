@@ -18,5 +18,6 @@
 - Add RezeHack jar file to the mods folder
 
 ### TODO
-[] Command Auto Complete
-[] HUD
+- [ ] Command Auto Complete
+- [ ] HUD
+- [ ] Acc system (tho i dont intend on touching the new microsoft login)
