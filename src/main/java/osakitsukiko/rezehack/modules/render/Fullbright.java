@@ -22,9 +22,7 @@ public class Fullbright extends Module {
     @Override
     public void onUpdate() {
         if (fb_type.getValue().equalsIgnoreCase("night_vision")) {
-            if (this.isEnabled()) {
-                mc.player.addStatusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 500, 0));
-            }
+            mc.player.addStatusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 500, 0));
         }
     }
 

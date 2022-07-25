@@ -9,6 +9,7 @@ public class Test extends Module {
     }
 
     Setting<Boolean> boolean_setting = register(new Setting<>("spamtheconsole", "Spam The Console", "DO IT! DO IT! DO IT!", this, true));
+    Setting<Integer> int_setting = register(new Setting("leinteger", "Le Integer", "Magic!", this, 10, 0, 100));
 
     @Override
     public void onUpdate() {
