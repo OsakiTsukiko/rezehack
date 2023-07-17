@@ -21,6 +21,12 @@ repositories {
 		url = 'https://jitpack.io' 
 		mavenCentral()
 	}
+
+	maven {
+        name = "reze"
+        url = "http://osakitsukiko.github.io/rezehack/maven"
+		allowInsecureProtocol = true
+    }
 }
 
 dependencies {
@@ -38,7 +44,7 @@ dependencies {
 	// modImplementation "net.fabricmc.fabric-api:fabric-api-deprecated:${project.fabric_version}"
 
 	modImplementation 'net.jodah:typetools:0.5.0'
-	modImplementation 'com.github.ZeroMemes:Alpine:1.5'
+	modImplementation 'ZeroMemes:Alpine:1.5'
 	modImplementation 'com.github.Vatuu:discord-rpc:1.6.2'
 	include 'net.jodah:typetools:0.5.0'
 	include 'com.github.ZeroMemes:Alpine:1.5'
